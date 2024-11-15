@@ -1,29 +1,24 @@
 import  { useState, useEffect } from 'react';
 
 const Profile = () => {
-  // State to store user profile data (this could be fetched from an API or local storage)
   const [userProfile, setUserProfile] = useState({
     name: 'Aditya Pandey',
     email: 'aditya.2314@example.com',
     bio: 'A passionate developer exploring the world of blockchain and web3 Ecoscystem EcoDao.',
-    profilePicture: 'https://via.placeholder.com/150',
+    profilePicture: 'https://avatars.githubusercontent.com/u/123004951?v=4',
   });
 
-  // Edit Mode State
   const [isEditing, setIsEditing] = useState(false);
   const [editedProfile, setEditedProfile] = useState(userProfile);
 
-  // Handle profile update (this could be an API call to save the changes)
   const handleUpdateProfile = () => {
     setUserProfile(editedProfile);
     setIsEditing(false);
     alert('Profile updated successfully!');
   };
 
-  // Simulate fetching user data (e.g., from an API)
   useEffect(() => {
-    // Fetch user profile data here (e.g., from API or localStorage)
-    // For now, we just use the hardcoded `userProfile` state
+    
   }, []);
 
   return (
@@ -32,7 +27,6 @@ const Profile = () => {
         <h2 className="text-3xl font-semibold text-center text-gray-700 mb-6">Your Profile</h2>
         
         <div className="flex justify-center mb-6">
-          {/* Profile Picture */}
           <img
             src={userProfile.profilePicture}
             alt="Profile"

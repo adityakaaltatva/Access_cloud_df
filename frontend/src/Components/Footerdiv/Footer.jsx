@@ -1,4 +1,3 @@
-
 const Footer = () => {
     return (
         <div className='footer p-10 bg-gray-800 rounded-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center text-center lg:text-left'>
@@ -20,7 +19,6 @@ const Footer = () => {
                 <ul className='grid gap-2'>
                     <li><a href="#about" className='text-gray-400 hover:text-white'>About Us</a></li>
                     <li><a href="#careers" className='text-gray-400 hover:text-white'>Careers</a></li>
-                    <li><a href="#press" className='text-gray-400 hover:text-white'>Press</a></li>
                     <li><a href="#partners" className='text-gray-400 hover:text-white'>Partners</a></li>
                 </ul>
             </div>
@@ -45,6 +43,10 @@ const Footer = () => {
                     <li><a href="#security" className='text-gray-400 hover:text-white'>Security</a></li>
                     <li><a href="#status" className='text-gray-400 hover:text-white'>System Status</a></li>
                 </ul>
+            </div>
+
+            <div className='col-span-full text-center pt-8 text-gray-500 text-sm'>
+                @gist2024
             </div>
         </div>
     );

@@ -15,7 +15,7 @@ const Footer = () => {
 
             <div className='grid'>
                 <span className='divTitle text-lg font-semibold py-3 text-gray-200'>
-                    Company
+                    Project
                 </span>
                 <ul className='grid gap-2'>
                     <li><a href="#about" className='text-gray-400 hover:text-white'>About Us</a></li>

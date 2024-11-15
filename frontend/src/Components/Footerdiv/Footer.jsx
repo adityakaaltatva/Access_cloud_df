@@ -46,7 +46,7 @@ const Footer = () => {
             </div>
 
             <div className='col-span-full text-center pt-8 text-gray-500 text-sm'>
-                @gist2024
+                @gist2024 AdityaKaaltatva
             </div>
         </div>
     );

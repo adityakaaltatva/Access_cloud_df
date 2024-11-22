@@ -7,7 +7,6 @@ const NavBar = () => {
     const [walletAddress, setWalletAddress] = useState(null);
     const [isConnected, setIsConnected] = useState(false);
 
-    // Check if MetaMask is installed
     useEffect(() => {
         if (window.ethereum) {
             window.ethereum.on('accountsChanged', handleAccountChange);
@@ -61,7 +60,7 @@ const NavBar = () => {
             <Link to='/'>
             <div className="logoDiv">
                 <h1 className="logo text-[28px] font-bold text-blue-400 tracking-wider">
-                    Access<span className="text-white">Cloud</span>
+                    GIST<span className="text-white">Cloud</span>
                 </h1>
             </div>
             </Link>
